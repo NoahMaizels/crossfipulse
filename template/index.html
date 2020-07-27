@@ -7,6 +7,7 @@
 	<title>X-FiPulse</title>
 	<link rel="stylesheet" href="https://jenil.github.io/bulmaswatch/superhero/bulmaswatch.min.css">
 	<link rel="icon" type="image/png" href="favicon.png" />
+	<link href="https://unpkg.com/@fortawesome/fontawesome-free@5.13.0/css/all.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -17,56 +18,55 @@
 		@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
 
 
+
 		.pulse {
 			position: relative;
 			display: inline-block;
 			color: #d9534f;
-			
+
 		}
 
-		.pulse1
-		{
+		.pulse1 {
 			position: relative;
 			animation: pulse-sizing 1s 5 ease-out;
 		}
 
-		.pulse2
-		{
+		.pulse2 {
 			position: absolute;
-			top:0;
+			top: 0;
 			animation: pulse-red 1s 5 ease-out;
-			color:transparent;
+			color: transparent;
 		}
 
 		@keyframes pulse-sizing {
 			0% {
 				transform: scale(1);
-				
+
 			}
 
 			25% {
 				transform: scale(0.95);
-				opacity:0.8;
+				opacity: 0.8;
 			}
 
 			50% {
 				transform: scale(1);
-				
+
 			}
 		}
-		
+
 
 		@keyframes pulse-red {
 			0% {
 				transform: scale(1);
-				text-shadow: 0 0 5px  rgba(217,83,79,1);
+				text-shadow: 0 0 5px rgba(217, 83, 79, 1);
 			}
 
 
 			100% {
 				transform: scale(1.2);
-				opacity:0;
-				text-shadow: 0 0 10px rgba(217,83,79,0.8);
+				opacity: 0;
+				text-shadow: 0 0 10px rgba(217, 83, 79, 0.8);
 			}
 		}
 
@@ -134,7 +134,7 @@
 		}
 
 		body {
-			background: linear-gradient(rgba(0, 0, 0, 1), rgba(31, 45, 59, 0.8),rgba(31, 45, 59, 1)), url("what-the-hex.png");
+			background: linear-gradient(rgba(0, 0, 0, 1), rgba(31, 45, 59, 0.8), rgba(31, 45, 59, 1)), url("what-the-hex.png");
 		}
 
 
@@ -153,6 +153,23 @@
 
 
 		}
+
+		.navbar-brand .logo {
+			font-size: 25px;
+			font-family: 'Exo 2', sans-serif;
+			font-weight: 200;
+		}
+
+		.navbar-brand .logo b {
+			font-size: 25px;
+			font-family: 'Exo 2', sans-serif;
+			font-weight: 400;
+		}
+
+		.navbar-start .navbar-item {
+			margin-right: 20px;
+		}
+
 
 		.subtitle {
 			font-size: 0.8rem;
@@ -302,12 +319,99 @@
 		}
 	</style>
 
-	<!-- Brand and Main Menu -->
-	<section class="section section-header">
+	<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
 		<div class="container">
+			<div class="navbar-brand">
+
+				<a class="navbar-item is-hidden-desktop">
+					<div class="logo">
+						XFI<b>
+							<div class="pulse">
+								<div class="pulse1">Pulse</div>
+								<div class="pulse2">Pulse</div>
+							</div>
+						</b>
+					</div>
+				</a>
+
+				<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+					data-target="navbarBasicExample">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+
+			<div id="navbarBasicExample" class="navbar-menu">
+				<div class="navbar-start">
+
+
+
+					<a class="navbar-item">
+						Ranking
+					</a>
+
+					<a class="navbar-item">
+						Lending
+					</a>
+
+					
+
+
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link">
+							List
+						</a>
+
+						<div class="navbar-dropdown">
+							<a class="navbar-item">
+								DeFi
+							</a>
+							<a class="navbar-item">
+								Tokens
+							</a>
+						</div>
+					</div>
+
+					<a class="navbar-item">
+						Earn Income
+					</a>
+
+				</div>
+
+				<div class="navbar-end">
+					<div class="navbar-item">
+						<div class="buttons">
+							<a class="button is-dark">
+								<span class="icon">
+									<i class="fab fa-telegram"> </i>
+								</span>
+							</a>
+							<a class="button is-dark">
+								<span class="icon">
+									<i class="fab fa-twitter"> </i>
+								</span>
+							</a>
+							<a class="button is-dark">
+								<span class="icon">
+									<i class="fab fa-github"> </i>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+
+	<!-- Brand and Main Menu -->
+	<section class="section section-header" style="margin-top:-20px;">
+		<div class="container  is-hidden-touch">
 
 			<h1 class="title logo">
-				XFI<b><div class="pulse"> 
+				XFI<b>
+					<div class="pulse">
 						<div class="pulse1">Pulse</div>
 						<div class="pulse2">Pulse</div>
 					</div>
@@ -481,7 +585,8 @@
 
 	<section class="section" style="margin-top:-40px">
 		<div class="container has-text-centered">
-			Powered by <img src="https://www.wanchain.org/wp-content/uploads/2019/07/cropped-logo-e1564132592258-5.png" style="height:25px;width:auto;margin-top:-2px;vertical-align:middle"/>
+			Powered by <img src="https://www.wanchain.org/wp-content/uploads/2019/07/cropped-logo-e1564132592258-5.png"
+				style="height:25px;width:auto;margin-top:-2px;vertical-align:middle" />
 			<br />© 2020 X-Fi Pulse, all rights reserved.
 		</div>
 	</section>
@@ -538,6 +643,34 @@
 				}
 			}
 		});
+
+
+		document.addEventListener('DOMContentLoaded', () => {
+
+			// Get all "navbar-burger" elements
+			const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+			// Check if there are any navbar burgers
+			if ($navbarBurgers.length > 0) {
+
+				// Add a click event on each of them
+				$navbarBurgers.forEach(el => {
+					el.addEventListener('click', () => {
+
+						// Get the target from the "data-target" attribute
+						const target = el.dataset.target;
+						const $target = document.getElementById(target);
+
+						// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+						el.classList.toggle('is-active');
+						$target.classList.toggle('is-active');
+
+					});
+				});
+			}
+
+		});
+
 	</script>
 </body>
 
