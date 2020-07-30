@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div className="appContainer">
       <Head>
-        <title>xfiPulse</title>
+        <title>xfiPulse - Cross-chain Decentralized Finance Leaderboard</title>
        
         <link rel="icon" type="image/png" href="/favicon.png" />
         <meta charSet="utf-8" key="charset"/>
@@ -67,15 +67,15 @@ export default function Home() {
 	  <section className="section section-faq" style={{marginTop: "-60px"}}>
 		<div className="container">
 			<div className="content">
-				<h3>What is X-Fi?</h3>
-				<p>X-Fi is an abbreviation of the phrase cross-chain finance which generally refers to the digital
+				<h3>What is xfiPulse?</h3>
+				<p>xfiPulse is an abbreviation of the phrase cross-chain finance which generally refers to the digital
 					assets and financial smart contracts, protocols, and decentralized applications (DApps) built on
 					Ethereum. In simpler terms, it's financial software built on the blockchain that can be pieced
 					together like Money Legos. Read more about DeFi.</p>
 			</div>
 			<div className="content">
 				<h3>How do we calculate total value locked (TVL)?</h3>
-				<p>X-Fi Pulse monitors each protocol’s underlying smart contracts on the Ethereum blockchain. Every
+				<p>xfiPulse monitors each protocol’s underlying smart contracts on the Ethereum blockchain. Every
 					hour, we refresh our charts by pulling the total balance of Ether (ETH) and ERC-20 tokens held by
 					these smart contracts. TVL(USD) is calculated by taking these balances and multiplying them by their
 					price in USD.</p>
@@ -95,7 +95,7 @@ export default function Home() {
 >
 			Powered by Fennec / NiuWa
 			<br />
-      © 2020 X-Fi Pulse, all rights reserved.
+      © 2020 xfiPulse, all rights reserved.
 		</div>
 	</section>
        
