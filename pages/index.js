@@ -25,9 +25,8 @@ export default function Home() {
 	      <meta name="viewport" content="width=device-width, initial-scale=1" key="viewport"/>
 	      <link rel="stylesheet" href="https://jenil.github.io/bulmaswatch/superhero/bulmaswatch.min.css" key="bulma"/>
 	      <link href="https://unpkg.com/@fortawesome/fontawesome-free@5.13.0/css/all.css" rel="stylesheet" key="fa"/>
-        <link rel="preload" href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;400;700&display=swap" as="font" crossOrigin=""/>
-        <link rel="preload"href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;800&display=swap"as="font"crossOrigin=""/>
-        <link rel="preload"href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap"as="font"crossOrigin=""/>
+
+        <link href="/fonts.css" rel="stylesheet"/>
       </Head>
 
       <main>
