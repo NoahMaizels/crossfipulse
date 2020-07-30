@@ -1,3 +1,5 @@
+import numeral from 'numeral'
+
 const Projects = ({data}) => {
 	data = data.sort((projectA, projectB) => projectB.tvl - projectA.tvl)
 	Object.keys(data).forEach(key => {
@@ -19,7 +21,7 @@ const Projects = ({data}) => {
 								<th className="xfi-name">Name</th>
 								<th className="xfi-chain">Chain</th>
 								<th className="xfi-type">Category</th>
-								<th className="xfi-locked">Locked (USD)</th>
+								<th className="xfi-locked">Locked</th>
 								<th className="xfi-percent">1 Day %</th>
 							</tr>
 						</thead>
@@ -31,8 +33,8 @@ const Projects = ({data}) => {
 									<td className="xfi-name">{project.name}</td>
 									<td className="xfi-chain">{project.platform}</td>
 									<td className="xfi-type">{project.category}</td>
-									<td className="xfi-locked">{project.tvl}</td>
-									<th className={`xfi-percent ${project.style}`}>{project.percentChangeDay}</th>
+									<td className="xfi-locked">{numeral(project.tvl).format('$0,0')}</td>
+									<th className={`xfi-percent ${project.style}`}>{project.percentChangeDay}%</th>
 								</tr>)
 								})
 							}

@@ -19,7 +19,8 @@ export default function Home() {
     <div className="appContainer">
       <Head>
         <title>xfiPulse</title>
-        <link rel="icon" href="/favicon.ico" key="favicon"/>
+       
+        <link rel="icon" type="image/png" href="/favicon.png" />
         <meta charSet="utf-8" key="charset"/>
 	      <meta name="viewport" content="width=device-width, initial-scale=1" key="viewport"/>
 	      <link rel="stylesheet" href="https://jenil.github.io/bulmaswatch/superhero/bulmaswatch.min.css" key="bulma"/>
@@ -321,6 +322,12 @@ export default function Home() {
         }
 
         .xfi-table .xfi-locked {
+          width: 140px;
+          text-align: right !important;
+
+        }
+
+        .xfi-table .xfi-percent {
           width: 140px;
           text-align: right !important;
 
