@@ -95,7 +95,7 @@ export default function Home() {
 >
 			Powered by Fennec / NiuWa
 			<br />
-      © 2020 xfiPulse, all rights reserved.
+      © {new Date().getFullYear()} xfiPulse, all rights reserved.
 		</div>
 	</section>
        
