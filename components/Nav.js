@@ -1,4 +1,6 @@
 import { useEffect } from 'react'
+import { faTelegram,faGithub,faTwitter } from "@fortawesome/free-brands-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Nav = () => {
   useEffect(() => {
@@ -66,17 +68,18 @@ const Nav = () => {
               <div className="buttons">
                 <a className="button is-dark">
                   <span className="icon">
-                    <i className="fab fa-telegram"> </i>
+                    <FontAwesomeIcon icon={faTelegram} />
                   </span>
                 </a>
                 <a className="button is-dark">
                   <span className="icon">
-                    <i className="fab fa-twitter"> </i>
+                    <FontAwesomeIcon icon={faTwitter} />
                   </span>
                 </a>
                 <a className="button is-dark">
+                
                   <span className="icon">
-                    <i className="fab fa-github"> </i>
+                    <FontAwesomeIcon icon={faGithub} />
                   </span>
                 </a>
               </div>

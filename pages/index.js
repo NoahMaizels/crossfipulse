@@ -23,9 +23,7 @@ export default function Home() {
         <link rel="icon" type="image/png" href="/favicon.png" />
         <meta charSet="utf-8" key="charset"/>
 	      <meta name="viewport" content="width=device-width, initial-scale=1" key="viewport"/>
-	      <link rel="stylesheet" href="https://jenil.github.io/bulmaswatch/superhero/bulmaswatch.min.css" key="bulma"/>
-	      <link href="https://unpkg.com/@fortawesome/fontawesome-free@5.13.0/css/all.css" rel="stylesheet" key="fa"/>
-
+        <link href="/bulmaswatch.min.css" rel="stylesheet"/>
         <link href="/fonts.css" rel="stylesheet"/>
       </Head>
 
@@ -270,6 +268,12 @@ export default function Home() {
 
         .navbar-start .navbar-item {
           margin-right: 20px;
+        }
+
+        .icon svg
+        {
+          width:100%;
+          height:100%;
         }
 
 
