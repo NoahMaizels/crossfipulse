@@ -233,9 +233,11 @@ export default function Home() {
           background: transparent;
         }
 
+        /*
         body {
           background: linear-gradient(rgba(0, 0, 0, 1), rgba(31, 45, 59, 0.8), rgba(31, 45, 59, 1)), url("what-the-hex.png");
         }
+        */
 
 
         h1.logo {
